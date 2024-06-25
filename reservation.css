@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
+  max-width: 100%;
+  height: 600px;
+  background-image: url(images/reservation.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-info {
+  font-family: league spartan;
+  max-width: 100%;
+  width: 445px;
+  height: 188px;
+  letter-spacing: -1px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 18px;
+  color: #fff;
+  margin-top: 150px;
+}
+.header-h3 {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.header-paragraph {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+.dine {
+  position: absolute;
+  top: 10%;
+  left: 21.5%;
+}
+.big-container {
+  max-width: 100%;
+  height: 809px;
+  background-color: rgb(229, 229, 229);
+}
+.validation {
+  font-family: League Spartan;
+  background-color: #fff;
+  max-width: 100%;
+  width: 540px;
+  height: 545px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 400px;
+}
+.input {
+  width: 444px;
+  height: 43px;
+  font-size: 20px;
+  padding: 10px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+input.valid {
+  width: 444px;
+  height: 43px;
+  font-size: 20px;
+  padding: 10px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: #36cc36;
+}
+.invalid + .paragraph {
+  display: block;
+  color: red;
+}
+input.invalid {
+  border-color: red;
+  width: 444px;
+  height: 43px;
+  font-size: 20px;
+  padding: 10px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.validation-date {
+  max-width: 100%;
+  width: 444px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.validation-p {
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+.paragraph {
+  font-family: League Spartan;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 9.2px;
+  letter-spacing: -0.125px;
+  text-align: left;
+  display: none;
+}
+.validation-time {
+  max-width: 100%;
+  width: 444px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#input-date {
+  width: 90px;
+  height: 43px;
+  padding-left: 5px;
+  font-size: 20px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+#input-time {
+  width: 90px;
+  height: 43px;
+  padding: 10px;
+  font-size: 20px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+#validation-meridiem {
+  width: 90px;
+  height: 43px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.validation-quantity {
+  width: 400px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  gap: 145px;
+}
+.increment {
+  color: rgba(158, 127, 102, 1);
+  font-size: 20px;
+  cursor: pointer;
+}
+.decrement {
+  color: rgba(158, 127, 102, 1);
+  font-size: 20px;
+  cursor: pointer;
+}
+.validation-btn {
+  width: 444px;
+  height: 64px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.validation-btn:hover {
+  color: #111111;
+  background-color: white;
+  border-color: black;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 240px;
+  background-color: #111111;
+  gap: 192px;
+}
+.contact-section-dine {
+  margin-right: 40px;
+  margin-bottom: 46px;
+}
+.contact-info {
+  display: flex;
+  gap: 124px;
+}
+
+.contact-paragraph {
+  color: #fff;
+  font-family: League Spartan;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.open-times {
+  color: #fff;
+  font-family: League Spartan;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+@media (max-width: 770px) {
+  .big-container {
+    height: 1100px;
+    position: relative;
+  }
+  .dine {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .validation {
+    margin: 0;
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

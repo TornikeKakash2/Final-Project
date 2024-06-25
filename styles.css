@@ -1,0 +1,590 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dark {
+  background-color: #111111;
+  color: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.toggle-theme {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  color: #111111;
+  background-color: #fff;
+  cursor: pointer;
+}
+.header-section {
+  max-width: 100%;
+  height: 820px;
+  background-color: black;
+  position: relative;
+}
+.header-img {
+  position: absolute;
+  display: flex;
+  right: 0;
+  background-size: cover;
+}
+.header-title {
+  position: absolute;
+  width: 508px;
+  height: 160px;
+  font-family: league spartan;
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: white;
+  top: 30.5%;
+  left: 21%;
+}
+.header-description {
+  width: 445px;
+  height: 90px;
+  top: 55%;
+  left: 21%;
+  gap: 0px;
+  opacity: 0px;
+  position: absolute;
+  display: flex;
+  font-family: League Spartan;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
+}
+.header-btn {
+  position: absolute;
+  width: 245px;
+  height: 64px;
+  font-family: League Spartan;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  color: #fff;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  top: 73%;
+  left: 21%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.header-btn:hover {
+  color: #111111;
+  background-color: white;
+}
+.dine {
+  position: absolute;
+  top: 15%;
+  left: 21%;
+}
+.header-info {
+  width: 507px;
+  height: 364px;
+}
+.nav-list {
+  position: absolute;
+  color: #fff;
+  display: flex;
+  right: 20%;
+  top: 15%;
+  list-style: none;
+  gap: 50px;
+  font-size: 23px;
+}
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.7s;
+}
+.nav-list a:hover {
+  opacity: 50%;
+}
+.nav-mobile {
+  position: absolute;
+  color: #fff;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  right: 0;
+  top: 10%;
+  display: none;
+}
+.nav-list-mobile {
+  position: absolute;
+  color: #fff;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  right: 3%;
+  text-align: center;
+  padding-top: 10px;
+}
+.nav-icon {
+  height: 50px;
+  cursor: pointer;
+}
+.nav-list-mobile a {
+  background-color: #4f4e52;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: none;
+  width: 100px;
+  height: 50px;
+}
+.nav-list-mobile.active {
+  width: 120px;
+  height: 200px;
+}
+.nav-list-mobile.active a {
+  display: block;
+}
+
+.container2 {
+  max-width: 100%;
+  width: 100%;
+  height: 1400px;
+}
+.nature-section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
+}
+
+.body-text {
+  font-family: league spartan;
+  width: 445px;
+  height: 96px;
+  color: #242b37;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#rectangle {
+  margin-bottom: 63px;
+}
+
+#oval {
+  margin-bottom: 60px;
+}
+.nature-h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+.nature-info {
+  height: 300px;
+}
+.nature-paragraph {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+.food-section {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
+}
+
+.food-text {
+  font-family: league spartan;
+  width: 445px;
+  height: 96px;
+  color: #242b37;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#rectangle {
+  margin-bottom: 63px;
+}
+
+#oval {
+  margin-bottom: 60px;
+}
+
+.food-h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+.food-paragraph {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+.food-img {
+  padding-top: 80px;
+}
+
+.food-info {
+  height: 300px;
+}
+.menu-section {
+  max-width: 100%;
+  width: 100%;
+  height: 761px;
+  font-family: league spartan;
+  background-color: #111111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+}
+
+.menu-left-text {
+  height: 213px;
+  width: 445px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.menu-left-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+.menu-left-paragraph {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+.menu-images {
+  max-width: 200px;
+  height: 142px;
+  display: flex;
+}
+.card {
+  width: 350px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.card-right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  padding-top: 255px;
+}
+.card-left-paragraph {
+  padding-top: 20px;
+}
+
+.slider {
+  max-width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 950px;
+  gap: 125px;
+  padding-left: 165px;
+  padding-right: 165px;
+  opacity: 100%;
+}
+
+.slider-img {
+  width: 540px;
+}
+.slider-info {
+  height: 468px;
+}
+.slider-text {
+  width: 445px;
+  height: 157px;
+  font-family: league spartan;
+}
+.slider-text-h3 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+.slider-text-paragraph {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  padding-top: 19px;
+}
+
+.slider-btn {
+  font-family: league spartan;
+  width: 245px;
+  height: 64px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  cursor: pointer;
+  transition: 0.7s;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+.slider-btn:hover {
+  color: #111111;
+  background-color: white;
+  border-color: black;
+}
+
+.slider-filter {
+  width: 186px;
+  height: 28px;
+  font-family: League Spartan;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  text-align: left;
+  color: rgba(76, 76, 76, 1);
+  opacity: 50%;
+  cursor: pointer;
+}
+.slider-filter:hover {
+  opacity: 100%;
+}
+.slider-container {
+  width: 100%;
+  position: relative;
+}
+.right-arrow {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.left-arrow {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50%;
+  transform: translate(0, 50%);
+  left: 10%;
+  background-color: transparent;
+}
+
+.active {
+  display: flex;
+  width: 100%;
+  height: 950px;
+}
+
+.reservation-section {
+  max-width: 100%;
+  font-family: League Spartan;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+  background-image: url(images/reservation.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.reservation-paragraph {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+.reservation-btn {
+  width: 245px;
+  height: 64px;
+  font-family: League Spartan;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  top: 73%;
+  left: 21%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.reservation-btn:hover {
+  color: #111111;
+  background-color: white;
+}
+.contact-section {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 240px;
+  background-color: #111111;
+  gap: 192px;
+}
+.contact-section-dine {
+  margin-right: 40px;
+  margin-bottom: 46px;
+}
+
+.contact-paragraph {
+  color: #fff;
+  font-family: League Spartan;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.open-times {
+  color: #fff;
+  font-family: League Spartan;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.contact-info {
+  display: flex;
+  gap: 124px;
+}
+
+/* start of responsive */
+@media (max-width: 770px) {
+  .toggle-theme {
+    align-items: center;
+  }
+  .header-section {
+    max-width: 770px;
+    width: 100%;
+    height: 992px;
+  }
+  .nav-icon {
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+  .nav-list-mobile.active {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
+  }
+  .container2 {
+    height: 2200px;
+  }
+  .body-text {
+    width: 457px;
+    height: 213px;
+  }
+  .nature-section {
+    flex-wrap: wrap;
+  }
+  .food-section {
+    flex-wrap: wrap;
+    gap: 40px;
+    flex-direction: column-reverse;
+  }
+
+  .food-img {
+    padding: 0;
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .menu-section {
+    height: 1000px;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0;
+  }
+  .card-right-container {
+    padding: 0;
+  }
+  .slider-container {
+    flex-wrap: wrap;
+    height: 1300px;
+  }
+  .active {
+    flex-wrap: wrap;
+  }
+  .slider-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .reservation-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* end of responsive */

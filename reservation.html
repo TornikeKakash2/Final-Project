@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reservation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- start of container -->
+    <div class="big-container">
+      <img src="images/dine.svg" alt="dine" class="dine" />
+      <div class="container">
+        <div class="header-info">
+          <h3 class="header-h3">Reservations</h3>
+          <p class="header-paragraph">
+            We can’t wait to host you. If you have any special requirements
+            please feel free to call on the phone number below. We’ll be happy
+            to accommodate you.
+          </p>
+        </div>
+
+        <div class="validation">
+          <input
+            type="text"
+            class="input"
+            name="name"
+            placeholder="First Name"
+          />
+          <p class="paragraph">This field is required</p>
+          <input type="text" class="input" name="email" placeholder="Email" />
+          <p class="paragraph">This field is required</p>
+          <div class="validation-date">
+            <div class="p-info">
+              <p class="validation-p">Pick a date</p>
+              <p class="paragraph">This field is incomplete</p>
+            </div>
+            <input
+              type="text"
+              id="input-date"
+              min="1"
+              max="12"
+              placeholder="MM"
+              maxlength="2"
+              class="input-date"
+            />
+            <input
+              type="text"
+              id="input-date"
+              min="1"
+              max="31"
+              maxlength="2"
+              placeholder="DD"
+              class="input-date"
+            />
+            <input
+              type="text"
+              id="input-date"
+              min="1965"
+              max="2024"
+              maxlength="4"
+              placeholder="YYYY"
+              class="input-date"
+            />
+          </div>
+          <div class="validation-time">
+            <div class="p-info">
+              <p class="validation-p">Pick a time</p>
+              <p class="paragraph">This field is not complete</p>
+            </div>
+            <input
+              type="text"
+              id="input-time"
+              placeholder="09"
+              min="9"
+              max="23"
+              maxlength="2"
+              class="input-time"
+            />
+            <input
+              type="text"
+              id="input-time"
+              placeholder="00"
+              min="0"
+              max="59"
+              maxlength="2"
+              class="input-time"
+            />
+            <select name="" id="validation-meridiem">
+              <option value="">AM</option>
+              <option value="">PM</option>
+            </select>
+          </div>
+          <div class="validation-quantity">
+            <p class="decrement">-</p>
+            <p class="quantity">0 People</p>
+            <p class="increment">+</p>
+          </div>
+          <button class="validation-btn">MAKE RESERVATION</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of container -->
+    <!-- start of contact section -->
+    <div class="contact-section">
+      <img src="images/dine.svg" alt="dine" class="contact-section-dine" />
+      <div class="contact-info">
+        <div class="contact-paragraph">
+          <p>MARTHWAITE, SEDBERGH</p>
+          <p>CUMBRIA</p>
+          <p>+00 44 123 4567</p>
+        </div>
+        <div class="open-times">
+          <p>OPEN TIMES</p>
+          <p>MON - FRI: 09:00 AM - 10:00PM</p>
+          <p>SAT - SUN: 09:00 AM - 11:30 PM</p>
+        </div>
+      </div>
+    </div>
+    <!-- end of contact section -->
+    <script src="reservation.js"></script>
+  </body>
+</html>
